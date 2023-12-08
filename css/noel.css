@@ -1,0 +1,45 @@
+* {
+    color: white!important;
+    z-index: 1;
+    font-family: 'Satoshi-Regular';
+}
+
+body {
+    background-image: url(../img/snow/snowflakes.svg), url(../img/snow/snowflakes_2.svg)!important;
+    animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 0, 0 0, 0 0;
+    }
+    100% {
+        background-position: 500px 1000px, 200px 400px, 300px 300px;
+    }
+}
+
+#snow, #sapin, #guirlande {
+    display: block!important;
+}
+
+.navbar {
+    background-color: #222!important;
+}
+
+body {
+    background-color: rgb(32, 41, 68);
+}
+
+.rectangle {
+    background-color: rgb(12, 20, 43);
+}
+
+.title-grey {
+    color: #bbbbbb!important;
+}
+
+.outline {
+    outline: 1px solid #58c4e6ff;
+    color: white!important;
+    transition: all 0.5s;
+}

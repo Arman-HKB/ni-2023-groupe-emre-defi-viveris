@@ -1,0 +1,211 @@
+@import url("./satoshi.css");
+
+/* Global */
+* {
+    color: #444!important;
+    z-index: 1;
+    font-family: 'Satoshi-Regular';
+}
+
+img {
+    pointer-events: none;
+}
+
+html, body {
+    scroll-behavior: smooth;
+    margin: 0;
+    overflow: hidden;
+}
+
+body {
+    background-image: none!important;
+}
+
+#snow, #sapin, #guirlande {
+    display: none!important;
+}
+
+a {
+    text-decoration: none;
+}
+
+textarea { 
+    resize: vertical; 
+}
+
+/* Navbar */
+.navbar {
+    position: relative;
+    -webkit-box-shadow: 0 4px 6px -6px #222;
+    -moz-box-shadow: 0 4px 6px -6px #222;
+    box-shadow: 0 4px 6px -6px #222;
+    font-size: 1.25rem;
+    vertical-align: middle!important;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-family: 'Satoshi-Bold';
+}
+
+.navbar-brand img {
+    height: 2rem;
+}
+
+#guirlande {
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    position: absolute;
+}
+
+/* Header */
+header {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    align-items: center;
+    position: relative;
+}
+
+.right-side {
+    position: relative;
+}
+
+.right-side img {
+    height: 45rem;
+    width: 45rem;
+}
+
+/* Forms */
+.rectangle {
+    position: absolute;
+    top: 25%;
+    right: -55%;
+    z-index: -1;
+    width: 100%;
+    height: 50%;
+    background-color: #f4ecda;
+}
+
+.dots {
+    position: absolute;
+    height: 2rem;
+    width: auto;
+}
+
+#dots_1 {
+    top: -1rem;
+    left: 3rem;
+}
+
+#sapin {
+    position: fixed;
+    height: 20rem;
+    width: auto;
+    bottom: -15px;
+    right: 0;
+}
+
+#snow {
+    position: fixed;
+    width: 100%;
+    bottom: -15%;
+    right: 0;
+    z-index: -1!important;
+}
+
+/* Themes */
+#themeDropdown {
+    padding: 0;
+    margin-top: 4px;
+    background-color: transparent;
+    width: 40px!important;
+    height: 40px!important;
+    border-radius: 100%;
+    outline: 1px solid #58c4e6ff;
+}
+
+.theme i {
+    padding: 0;
+    margin: 0;
+    color: #58c4e6ff!important;
+}
+
+.dropdown-menu li {
+    width: 40px!important;
+}
+
+.theme {
+    padding: 0;
+    width: 40px!important;
+}
+
+.dropdown-menu {
+    min-width: fit-content!important;
+}
+
+/* Titles and texts */
+.title-1 {
+    font-size: 3rem;
+    font-family: 'Satoshi-Medium';
+}
+
+.title-2 {
+    font-size: 1rem;
+    font-family: 'Satoshi-Medium';
+}
+
+.title-3 {
+    font-size: 2.5rem;
+    font-family: 'Satoshi-Black';
+}
+
+.title-grey {
+    color: #777!important;
+}
+
+/* Buttons and links */
+.navbar button {
+    background: transparent;
+    border: none;
+}
+
+button, .button {
+    background: linear-gradient(90deg, #58c4e6ff 0%, #5799b8ff 50%, #435387ff 100%);
+    color: #fff!important;
+    font-weight: semi-bold;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 2.5rem;
+    cursor: pointer;
+}
+
+.outline {
+    background: transparent;
+    outline: 1px solid #58c4e6ff;
+    color: #444!important;
+    transition: all 0.5s;
+}
+
+.outline:hover {
+    background: linear-gradient(90deg, #58c4e6ff 0%, #5799b8ff 50%, #435387ff 100%);
+    color: #fff!important;
+    outline: none;
+}
+
+/* MEDIA QUERIES */
+/* MD */
+@media screen and (max-width: 991px) {
+    header {
+        height: auto;
+        margin-bottom: 5rem;
+    }
+    .right-side {
+        display: flex!important;
+        justify-content:center!important;
+    }
+    .rectangle {
+        display: none;
+    }
+}

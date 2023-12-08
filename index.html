@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agence de Voyage Random</title>
+    <link rel="icon" type="image/png" href="./img/logo.svg"/>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/satoshi.cssF">
+    <link rel="stylesheet" href="./css/style.css">
+    <link id="pageColor" rel="stylesheet" href="">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-white">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand d-flex align-items-center gap-3" href="./index.html">
+                <img src="./img/logo.svg" alt="Logo" class="">
+                Agence de Voyage Random
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar_links" aria-controls="navbar_links" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar_links">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Destinations</a>
+                    </li>
+                    <li class="nav-item ms-0 ms-lg-3">
+                        <a class="nav-link active" aria-current="page" href="#">Réservation</a>
+                    </li>
+                    <div class="dropdown ms-0 ms-lg-3">
+                        <button class="d-flex justify-content-center align-items-center" type="button" id="themeDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./img/style.svg" alt="">
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="themeDropdown">
+                            <li><button onclick="colorSwitch('')" class="theme my-2" type="button"><i class="bi bi-brightness-high-fill"></i></button></li>
+                            <li><button onclick="colorSwitch('./css/dark.css')" class="theme my-2" type="button"><i class="bi bi-moon-stars-fill"></i></button></li>
+                            <li><button onclick="colorSwitch('./css/noel.css')" class="theme my-2" type="button"><i class="bi bi-snow2"></i></button></li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <img src="./img/guirlande.svg" alt="" id="guirlande">
+    </nav>
+    
+    <div class="container" id="top">
+        <!-- Header -->
+        <header class="row hidden">
+            <div class="col-12 col-lg-6 left-side">
+                <p class="title-1">Une agence de voyage random</p>
+                <p class="text-justify pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem cum in magnam assumenda, nam adipisci doloremque? Debitis maxime nihil voluptas iste, consectetur nostrum ducimus est eos quaerat magni possimus tempora!</p>
+                <p class="text-justify pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio velit explicabo dicta. Dolorum ipsa quod blanditiis nemo tenetur. Sed porro neque, ex pariatur doloribus autem quis, aperiam labore repudiandae delectus voluptate ut magni eveniet! Illum beatae sint provident eum at sapiente natus harum quos cupiditate, impedit, quae velit, perspiciatis qui aperiam maiores eaque reiciendis! Nihil ea eveniet dolor reprehenderit perferendis saepe consequuntur eaque quidem ipsa architecto suscipit minus impedit, modi et. Autem esse earum ducimus vel. Aperiam, exercitationem porro quos quam consequuntur minus. Quo sit, voluptate dignissimos dolor suscipit fugiat, numquam possimus minima laudantium totam cum ut enim veniam similique.</p>
+                <a href="#" class="button">Destinations</a>
+                <span class="mx-3">ou</span>
+                <a href="#" class="button outline">Réservation</a>
+            </div>
+            <div class="col-12 col-lg-6 order-first order-lg-last right-side">
+                <img src="./img/ilustration.svg" alt="" srcset="">
+            </div>
+            <div class="rectangle">
+                <img src="./img/dots.svg" alt="Logo" class="dots" id="dots_1">
+            </div>
+        </header>
+    </div>
+
+    <img src="./img/snow/snow.svg" alt="" id="snow">
+    <img src="./img/sapin.svg" alt="" id="sapin">
+    <script src="./main.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-3.5.1.slim.min.js"></script>
+</body>
+</html>
